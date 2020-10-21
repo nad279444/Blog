@@ -70,7 +70,7 @@ export default function Data({navigation}) {
             />
           );
         }}
-        keyExtractor={(item) => item.key}
+        keyExtractor={(item) => item.key.toString()}
       />
     </View>
   );

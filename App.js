@@ -17,8 +17,11 @@ export default function App() {
          options={{
            headerTitleAlign: 'center',
            headerRight: () =>(<View style={{paddingHorizontal: 10}}><Octicons name="search" size={24} color="black" /></View>),
-           headerLeft: () => (<View style={{paddingHorizontal: 10}}><FontAwesome name="th" size={24} color="black" /></View>)
-           
+           headerLeft: () => (<View style={{paddingHorizontal: 10}}><FontAwesome name="th" size={24} color="black" /></View>),
+           headerTitleStyle: {
+             fontWeight: 'bold',
+             fontSize: 30
+           }
          }}
          name='Discover'
          component={BlogList}/>

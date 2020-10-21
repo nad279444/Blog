@@ -1,5 +1,5 @@
 import React from "react";
-import { View, StyleSheet, Text, Image } from "react-native";
+import { View, StyleSheet, Text, Image} from "react-native";
 import {
   MaterialCommunityIcons,
   SimpleLineIcons,
@@ -46,11 +46,12 @@ export default function DetailedBlog({ route, navigation }) {
       </View>
       <View style={styles.profileContainer}>
       <Image source={route.params.profileImage} style={styles.profileImage} />
-         <Entypo name="dot-single" size={24} color="grey" />
+         
         <Text style={styles.profileText}>{route.params.name}</Text>
+        <View style={styles.dot}><Entypo name="dot-single" size={24} color="grey" /></View>
         <Text  style={styles.profileText}>{route.params.time}</Text>
       </View>
-      <Text style={styles.paragraph}> Sometimes known as a bloom or blossom, is the reproductive structure found in flowering plants (plants of the division Magnoliophyta, also called angiosperms). The biological function of a flower is to facilitate reproduction, usually by providing a mechanism for the union of sperm with eggs. Flowers may facilitate outcrossing (fusion of sperm and eggs from different individuals in a population) resulting from cross pollination or allow selfing (fusion of sperm and egg from the same flower</Text>
+      <Text style={styles.paragraph}>Sometimes known as a bloom or blossom, is the reproductive structure found in flowering plants (plants of the division Magnoliophyta, also called angiosperms). The biological function of a flower is to facilitate reproduction, usually by providing a mechanism for the union of sperm with eggs. Flowers may facilitate outcrossing (fusion of sperm and eggs from different individuals in a population) resulting from cross pollination or allow selfing (fusion of sperm and egg from the same flower</Text>
     </View>
   );
 }
@@ -89,6 +90,7 @@ const styles = StyleSheet.create({
   },
   icon: {
     marginLeft: 10,
+    
   },
   blogImage: {
     width: 310,
@@ -121,11 +123,17 @@ const styles = StyleSheet.create({
   profileText: {
     fontWeight: 'bold',
     color:'grey',
-    marginLeft: 10
+    marginLeft: 5,
+    marginTop: 5
 
   },
   paragraph: {
     marginLeft: 15,
-    marginTop: 10
+    marginTop: 10,
+    fontSize: 18
+  },
+  dot: {
+    marginLeft: 1,
+    marginTop: 3
   }
 });
