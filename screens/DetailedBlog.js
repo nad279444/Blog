@@ -59,14 +59,14 @@ export default function DetailedBlog({ route, navigation }) {
 const styles = StyleSheet.create({
   headerWidth: {
     width: 190,
-    height: 140,
+    height: 70,
     backgroundColor: "pink",
     borderColor: "black",
     flexDirection: "row",
   },
   headerLength: {
     width: 10,
-    height: 100,
+    height: 70,
     backgroundColor: "pink",
     borderColor: "black",
   },
@@ -75,17 +75,18 @@ const styles = StyleSheet.create({
   },
   headerText: {
     fontSize: 20,
-    marginTop: 87,
+    marginTop: 27,
     marginLeft: 10,
+    fontWeight: 'bold'
   },
   headerIcon: {
-    marginTop: 90,
+    marginTop: 30,
     marginLeft: 10,
   },
   iconContainer: {
     flexDirection: "row",
     position: "absolute",
-    top: 120,
+    top: 60,
     left: 230,
   },
   icon: {
@@ -93,15 +94,15 @@ const styles = StyleSheet.create({
     
   },
   blogImage: {
-    width: 310,
+    width: 300,
     height: 200,
     position: "absolute",
-    top: 170,
+    top: 100,
     left: 15,
   },
   titleContainer: {
     alignItems: "flex-start",
-    marginTop: 110,
+    marginTop: 150,
     marginHorizontal: 15,
   },
   title: {

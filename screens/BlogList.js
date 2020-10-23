@@ -19,7 +19,7 @@ export default function Data({navigation}) {
       title1: "How to Seem Like You ",
       title2: "Always Have A Shot ",
       title3: "Together ",
-      src:    require('../assets/fl.jpg'),
+      src:    require('../assets/flowe.jpg'),
       profileImage: require("../assets/sweater.jpg"),
       name: "Rafael",
       time: "4 minute read",
@@ -70,7 +70,7 @@ export default function Data({navigation}) {
             />
           );
         }}
-        keyExtractor={(item) => item.key.toString()}
+        keyExtractor={(item) => item.key}
       />
     </View>
   );
